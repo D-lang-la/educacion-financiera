@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finanzas para Jóvenes | Autoevaluación</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">FinanzasJóvenes</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="presupuesto.html">Presupuesto y Ahorro</a></li>
+      <li><a href="inversiones.html">Inversiones y Deudas</a></li>
+      <li><a href="quiz.html">Autoevaluación</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="quiz-container">
+      <h2>Autoevaluación Financiera 🧠</h2>
+      <p style="margin-bottom: 1.5rem; color: var(--text-light);">Pon a prueba lo que has aprendido en el sitio web.</p>
+
+      <div class="question-group">
+        <h4>1. Según la regla 50/30/20, ¿qué porcentaje de tus ingresos debes destinar al ahorro?</h4>
+        <label><input type="radio" name="q1" value="a"> 50%</label>
+        <label><input type="radio" name="q1" value="b"> 20%</label>
+        <label><input type="radio" name="q1" value="c"> 30%</label>
+      </div>
+
+      <div class="question-group">
+        <h4>2. ¿Qué es un Fondo de Emergencia?</h4>
+        <label><input type="radio" name="q2" value="a"> Un guardado de 3 a 6 meses de gastos para imprevistos.</label>
+        <label><input type="radio" name="q2" value="b"> Dinero reservado exclusivamente para ir de vacaciones.</label>
+        <label><input type="radio" name="q2" value="c"> Una deuda de tarjeta de crédito a largo plazo.</label>
+      </div>
+
+      <button class="btn" onclick="evaluarQuiz()">Enviar Respuestas</button>
+      <div id="result"></div>
+    </div>
+  </main>
+
+  <script src="assets/js/quiz.js"></script>
+</body>
+</html>
